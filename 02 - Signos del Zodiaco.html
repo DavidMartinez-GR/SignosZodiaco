@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos del Zodiaco</title>
+
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script type="text/javascript">
+
+        function buscaSigno() {
+
+            var nombreSigno=document.getElementById('cajaSigno').value.toLowerCase();
+            
+            document.getElementById('acuario').style.display = 'none';
+            document.getElementById('piscis').style.display = 'none';
+            document.getElementById('geminis').style.display = 'none';
+            document.getElementById('cancer').style.display = 'none';
+            document.getElementById('aries').style.display = 'none';
+            document.getElementById('leo').style.display = 'none';
+            document.getElementById('tauro').style.display = 'none';
+            document.getElementById('libra').style.display = 'none';
+            document.getElementById('virgo').style.display = 'none';
+            document.getElementById('escorpio').style.display = 'none';
+            document.getElementById('sagitario').style.display = 'none';
+            document.getElementById('capricornio').style.display = 'none';
+            document.getElementById('noSigno').style.display = 'none';
+
+            switch (nombreSigno) {
+                case 'acuario':
+                    document.getElementById('acuario').style.display='block';
+                    break;
+
+                case 'piscis':
+                    document.getElementById('piscis').style.display='block';
+                    break;
+                
+                case 'geminis':
+                    document.getElementById('geminis').style.display='block';
+                    break;
+
+                case 'cancer':
+                    document.getElementById('cancer').style.display='block';
+                    break;
+
+                case 'aries':
+                    document.getElementById('aries').style.display='block';
+                    break;
+
+                case 'leo':
+                    document.getElementById('leo').style.display='block';
+                    break;
+
+                case 'tauro':
+                    document.getElementById('tauro').style.display='block';
+                    break;
+
+                case 'libra':
+                    document.getElementById('libra').style.display='block';
+                    break;
+
+                case 'virgo':
+                    document.getElementById('virgo').style.display='block';
+                    break;
+
+                case 'escorpio':
+                    document.getElementById('escorpio').style.display='block';
+                    break;
+
+                case 'sagitario':
+                    document.getElementById('sagitario').style.display='block';
+                    break;
+
+                case 'capricornio':
+                    document.getElementById('capricornio').style.display='block';
+                    break;
+                        default:
+                            document.getElementById('noSigno').style.display='block';
+            }
+        }
+
+        function limpiarSigno() {
+            document.getElementById('cajaSigno').value='';
+            document.getElementById('acuario').style.display='none';
+            document.getElementById('aries').style.display='none';
+            document.getElementById('leo').style.display='none';
+            document.getElementById('piscis').style.display='none';
+            document.getElementById('virgo').style.display='none';
+            document.getElementById('geminis').style.display='none';
+            document.getElementById('tauro').style.display='none';
+            document.getElementById('escorpio').style.display='none';
+            document.getElementById('sagitario').style.display='none';
+            document.getElementById('capricornio').style.display='none';
+            document.getElementById('libra').style.display='none';
+            document.getElementById('cancer').style.display='none';
+            document.getElementById('noSigno').style.display='none';
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="titulo">
+        <h1>SIGNOS DEL ZODIACO</h1>
+    </div>
+
+    <div class="encabezado">
+        <input type="text" id="cajaSigno" value="Escribe el signo">
+        <input type="button" value="Busca el signo" onclick="buscaSigno();">
+        <input type="button" value="Limpia" onclick="limpiarSigno();">
+    </div>
+
+        <div id="noSigno" style="display: none" class="containerNoSigno">
+            <h3>No se encuentra ese signo.</h3>
+        </div>
+
+        <div id="acuario" style="display: none;" class="containerAcuario">
+            <h3>Acuario</h3>
+            <p>Acuario (20 de enero - 18 de febrero) es un signo de aire, regido por Urano. Se caracteriza por ser independiente, innovador, humanitario y original. Les gusta pensar fuera de lo convencional y suelen tener un fuerte sentido de la justicia social.</p> 
+            <img src="imagenes/acuario.png">
+        </div>
+
+        <div id="aries" style="display: none;" class="containerAries">
+            <h3>Aries</h3> 
+            <p>Aries (21 de marzo - 19 de abril) es un signo de fuego, regido por Marte. Se caracteriza por ser valiente, decidido, enérgico y amante de los desafíos. Tiende a ser impulsivo, líder nato y siempre busca iniciar proyectos con entusiasmo.</p>
+            <img src="imagenes/aries.png">
+        </div>
+
+        <div id="leo" style="display: none;" class="containerLeo">
+            <h3>Leo</h3> 
+            <p>Leo (23 de julio - 22 de agosto) es un signo de fuego, regido por el Sol. Se caracteriza por ser carismático, confiado, generoso y con gran sentido del liderazgo. Le gusta destacar y tiene una personalidad magnética, llena de energía y creatividad.</p>
+            <img src="imagenes/leo.png">
+        </div>
+
+        <div id="tauro" style="display: none;" class="containerTauro">
+            <h3>Tauro</h3> 
+            <p>Tauro (20 de abril - 20 de mayo) es un signo de tierra, regido por Venus. Se caracteriza por ser paciente, práctico, estable y amante de la comodidad. Valora la seguridad, la belleza y es perseverante en sus metas.</p>
+            <img src="imagenes/tauro.png">
+        </div>
+
+        <div id="virgo" style="display: none;" class="containerVirgo">
+            <h3>Virgo</h3> 
+            <p>Virgo (23 de agosto - 22 de septiembre) es un signo de tierra, regido por Mercurio. Se caracteriza por ser analítico, perfeccionista, organizado y detallista. Tiene un enfoque práctico y busca la eficiencia en todo lo que hace.</p>
+            <img src="imagenes/virgo.png">
+        </div>
+
+        <div id="libra" style="display: none;" class="containerLibra">
+            <h3>Libra</h3> 
+            <p>Libra (23 de septiembre - 22 de octubre) es un signo de aire, regido por Venus. Se caracteriza por ser diplomático, equilibrado, sociable y amante de la armonía. Valora la justicia, la belleza y busca relaciones pacíficas.</p>
+            <img src="imagenes/libra.png">
+        </div>
+
+        <div id="escorpio" style="display: none;" class="containerEscorpio">
+            <h3>Escorpio</h3> 
+            <p>Escorpio (23 de octubre - 21 de noviembre) es un signo de agua, regido por Plutón. Se caracteriza por ser intenso, apasionado, reservado y profundo. Posee una gran intuición y es conocido por su lealtad y determinación.</p>
+            <img src="imagenes/escorpio.png">
+        </div>
+
+        <div id="sagitario" style="display: none;" class="containerSagitario">
+            <h3>Sagitario</h3> 
+            <p>Sagitario (22 de noviembre - 21 de diciembre) es un signo de fuego, regido por Júpiter. Se caracteriza por ser aventurero, optimista, independiente y amante de la libertad. Disfruta explorar nuevas ideas y culturas.</p>
+            <img src="imagenes/sagitario.png">
+        </div>
+
+        <div id="capricornio" style="display: none;" class="containerCapricornio">
+            <h3>Capricornio</h3> 
+            <p>Capricornio (22 de diciembre - 19 de enero) es un signo de tierra, regido por Saturno. Se caracteriza por ser ambicioso, disciplinado, práctico y responsable. Valora la estabilidad y trabaja arduamente para alcanzar sus metas.</p>
+            <img src="imagenes/capricornio.png">
+        </div>
+
+        <div id="cancer" style="display: none;" class="containerCancer">
+            <h3>Cancer</h3>
+            <p>Cáncer (21 de junio - 22 de julio) es un signo de agua, regido por la Luna. Se caracteriza por ser emocional, intuitivo, protector y cariñoso. Valora la familia y la seguridad emocional, y es conocido por su naturaleza sensible.</p>
+            <img src="imagenes/cancer.png"> 
+        </div>
+
+        <div id="geminis" style="display: none;" class="containerGeminis">
+            <h3>Geminis</h3> 
+            <p>Géminis (21 de mayo - 20 de junio) es un signo de aire, regido por Mercurio. Se caracteriza por ser comunicativo, adaptable, curioso y versátil. Les gusta socializar y explorar nuevas ideas, pero pueden ser indecisos.</p>
+            <img src="imagenes/geminis.png">
+        </div>
+
+        <div id="piscis" style="display: none;" class="containerPiscis">
+            <h3>Piscis</h3>
+            <p>Piscis (19 de febrero - 20 de marzo) es un signo de agua, regido por Neptuno. Se caracteriza por ser sensible, intuitivo, compasivo y soñador. Suelen ser creativos y están en sintonía con sus emociones y las de los demás.</p> 
+            <img src="imagenes/piscis.png">
+        </div>
+
+
+</body>
+</html>
